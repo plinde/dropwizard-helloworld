@@ -1,16 +1,6 @@
 template: Hello, %s!
 defaultName: Peter
 
-
-# Swagger UI START
-
-# the only required property is resourcePackage, for more config options see below
-swagger:
-  resourcePackage: com.example.helloworld.resources
-# Swagger UI END
-
-
-
 logging:
 #  level: ALL
 
@@ -21,7 +11,7 @@ logging:
   appenders:
     - type: console
 
-#    - type: logstash-tcp
-#      host: 127.0.0.1
-#      port: 6666
+    - type: logstash-tcp
+      host: 127.0.0.1
+      port: 6666
 
